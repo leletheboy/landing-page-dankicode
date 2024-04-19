@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.dflex{
+    display: flex;
+}
+
+header .logo > img{
+    object-fit: contain;
+    width: 240px;
+    height: 44px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 60px;
+    top: 0;
+    font-weight: 300;
+    z-index: 2;
+    background-color: #472562;
+}
+
+
+
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .container nav ul{
+    list-style-type: none;
+}
+
+header .container ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .container li{
+    padding: 0 20px;
+}
+
+header .container li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav.mobile{
+    display: none;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    max-height: 700px;
+    display: flex;
+}
+
+/* section.hero img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+section.hero{
+    background-image: url(../imagens/capa.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.hero .container{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(20%);
+}
+
+section.hero .container h2{
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    max-width: 500px;
+}
+
+section.hero .container p{
+    max-width: 500px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-top: 8px;
+}
+
+section.call {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color: #472562;
+    padding: 0 2%;
+}
+
+section.call .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+section .text {
+    width: 100%;
+    color: white;
+    position: relative;
+    left: 100px;
+    margin-top: 12px;
+}
+
+section .text ul{
+    list-style-position: outside;
+    padding-left: 16px;
+}
+
+section .text h2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+section .text p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+section.call li {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+section.call img{
+    width: 420px;
+    height: 350px;
+    z-index: 1;
+}
+
+section.call button{
+    margin-top: 20px;
+    width: 166px;
+    height: 44px;
+    cursor: pointer;
+    background-color: #ff703d;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+}
+
+section.call button:hover{
+    background-color: #d85424;
+}
+
+.call2{
+    padding-top: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+.call2 h2{
+    color: #472663;
+    font-weight: 300;
+}
+
+.call2 p{
+    margin-top: 20px;
+    max-width: 750px;
+    color: #472663;
+    display: inline-block;
+}
+
+.call2 .container{
+    max-width: 1000px;
+}
+
+.call2 img{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.call3{
+    width: 100%;
+    display: flex;
+}
+
+.part1{
+    color: white;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: #835fa7;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.part1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    width: 62%;
+}
+
+.part1 p{
+    margin-right: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 36px;
+    max-width: 60%;
+}
+
+.part2{
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: white;
+    display: flex;
+}
+
+.sobre{
+    max-width: 500px;
+    padding-left: 30px;
+}
+
+.title-author{
+    display: flex;
+}
+
+.title-author h2{
+    color: #232323;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.title-author p{
+    color: #232323;
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.title-author img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 0;
+    margin-left: 16px;
+}
+
+.text-author p{
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    width: 90%;
+}
+
+.slider{
+    width: 15%;
+    margin-top: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.slider span{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}
+
+section.contact{
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+section.contact .container{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+}
+
+.form h2{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.form p{
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 400px;
+    margin-top: 8px;
+}
+
+.form form{
+    margin-top: 20px;
+}
+
+.form form input[type=text]{
+    width: 100%;
+    max-width: 480px;
+    height: 58px;
+    margin-top: 16px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid #ccc;
+}
+
+.form form textarea{
+    width: 100%;
+    max-width: 480px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    height: 160px;
+    margin-top: 16px;
+}
+
+.form button{
+    margin-top: 16px;
+    width: 160px;
+    height: 44px;
+    cursor: pointer;
+    background-color: #ff703d;
+    color: white;
+    border-radius: 40px;
+    border: none;
+}
+
+.form button:hover{
+    background-color: #d85424;
+}
+
+.map-extension{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-extension h2{
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.map{
+    margin-top: 16px;
+    width: 480px;
+    height: 480px;
+    background-color: white;
+    border: 5px solid #ccc;
+}
+
+@media screen and (max-width: 1040px){
+    section.contact .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .form p{
+        display: inline-block;    
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form form textarea{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .map-extension{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .map{
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header nav.desktop{
+        display: none;
+    }
+    header nav.mobile{
+        background-color: #472562;
+        display: flex;
+        flex-direction: column;
+    }
+    header nav.mobile ul{
+        margin-top: 12px;
+    }
+    section.hero .container{
+        width: 100%;
+        max-width: fit-content;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: none;
+    }
+    section.call {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    section.call .container{
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 380px;
+    }
+    section .text{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+    .text ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    section button{
+        display: inline-block;
+    }
+    section.call img {
+        display: none;
+    }
+    .call2{
+        padding: 40px 2%;
+    }
+    section.call3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .part1{
+        width: 100%;
+        align-items: center;
+        padding: 80px 0;
+    }
+    .part2{
+        display: flex;
+        justify-content: center;
+        width: 100%;    
+        padding: 80px 0;
+    }
+    .call2 img{
+        top: 50px;
+        margin-top: 16px;
+    }
+}
